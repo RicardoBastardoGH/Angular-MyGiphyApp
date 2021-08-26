@@ -1,0 +1,19 @@
+<aside class='container sidebar bg-dark text-white p-3'>
+    <header>
+      <h3>Gifs-App</h3>
+    </header>
+    <hr>
+  
+    <div class="list-group" *ngFor="let name of this.historial"  >
+      <button 
+        type="button" 
+        class="list-group-item list-group-item-action"
+        (click)="buscar(name)"
+        
+      >
+        {{name | titlecase}} 
+      </button>
+      <!-- <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+      <button type="button" class="list-group-item list-group-item-action">A fourth button item</button> -->
+    </div>
+  </aside>
